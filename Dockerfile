@@ -154,4 +154,4 @@ COPY --from=iconv /usr/local/lib /usr/local/lib/
 
 WORKDIR /root
 
-ENTRYPOINT ["/usr/local/bin/vim"]
+CMD ["/bin/bash"]
