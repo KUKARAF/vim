@@ -12,7 +12,7 @@ ARG LUA_VERSION="jit"
 ARG PYTHON3_VERSION=""
 
 
-FROM alpine:3.18.2 AS iconv
+FROM alpine:latest AS iconv
 
 RUN apk add --no-cache g++ make
 RUN wget --quiet --output-document - http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz | \
