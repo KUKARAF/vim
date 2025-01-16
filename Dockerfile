@@ -153,5 +153,4 @@ COPY --from=build /usr/local /usr/local/
 COPY --from=iconv /usr/local/lib /usr/local/lib/
 
 WORKDIR /root
-
-CMD ["/bin/bash"]
+CMD ["/bin/ash"]
